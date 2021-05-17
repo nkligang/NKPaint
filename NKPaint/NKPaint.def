@@ -1,0 +1,6 @@
+; NKPaint.def : Declares the module parameters for the DLL.
+
+LIBRARY      "NKPaint"
+DESCRIPTION  'NKPaint Windows Dynamic Link Library'
+
+EXPORTS

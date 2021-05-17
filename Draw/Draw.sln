@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Draw", "Draw.vcproj", "{FAB9D171-DD0B-4D23-915F-78BC086DC1F5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Image", "..\NKPaint\Image\Image.vcproj", "{EA08151D-D292-4478-9510-E5FE4203D842}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NKPaint", "..\NKPaint\NKPaint.vcproj", "{0451DAA5-0041-4C76-B2E5-3C746FBDF98D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EA08151D-D292-4478-9510-E5FE4203D842} = {EA08151D-D292-4478-9510-E5FE4203D842}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAB9D171-DD0B-4D23-915F-78BC086DC1F5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FAB9D171-DD0B-4D23-915F-78BC086DC1F5}.Debug|Win32.Build.0 = Debug|Win32
+		{FAB9D171-DD0B-4D23-915F-78BC086DC1F5}.Release|Win32.ActiveCfg = Release|Win32
+		{FAB9D171-DD0B-4D23-915F-78BC086DC1F5}.Release|Win32.Build.0 = Release|Win32
+		{EA08151D-D292-4478-9510-E5FE4203D842}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA08151D-D292-4478-9510-E5FE4203D842}.Debug|Win32.Build.0 = Debug|Win32
+		{EA08151D-D292-4478-9510-E5FE4203D842}.Release|Win32.ActiveCfg = Release|Win32
+		{EA08151D-D292-4478-9510-E5FE4203D842}.Release|Win32.Build.0 = Release|Win32
+		{0451DAA5-0041-4C76-B2E5-3C746FBDF98D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0451DAA5-0041-4C76-B2E5-3C746FBDF98D}.Debug|Win32.Build.0 = Debug|Win32
+		{0451DAA5-0041-4C76-B2E5-3C746FBDF98D}.Release|Win32.ActiveCfg = Release|Win32
+		{0451DAA5-0041-4C76-B2E5-3C746FBDF98D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1 @@
+start Tools\makensis.exe NKPaint.nsi

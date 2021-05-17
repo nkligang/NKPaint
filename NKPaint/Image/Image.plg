@@ -1,0 +1,58 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Image - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Image.res" /d "_DEBUG" /d "_AFXDLL" "E:\Project\DocRec\Source\UI\NKPaint\Image\Image.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE1E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "./CxImage" /I "./FreeImage" /I "./IPL/include" /I "./Gdiplus" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "VATI_EXTENSIONS" /D "_CRT_SECURE_NO_DEPRECATE" /D _WIN32_IE=0x0400 /D "_WINDLL" /D "_AFXDLL" /D "CXIMAGE_LIB" /Fp"Debug/Image.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Project\DocRec\Source\UI\NKPaint\Image\CImage.cpp"
+"E:\Project\DocRec\Source\UI\NKPaint\Image\CxImagePlus.cpp"
+"E:\Project\DocRec\Source\UI\NKPaint\Image\FreeImagePlus.cpp"
+"E:\Project\DocRec\Source\UI\NKPaint\Image\GdiPlus.cpp"
+"E:\Project\DocRec\Source\UI\NKPaint\Image\Image.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE1E.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE1F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "./CxImage" /I "./FreeImage" /I "./IPL/include" /I "./Gdiplus" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "VATI_EXTENSIONS" /D "_CRT_SECURE_NO_DEPRECATE" /D _WIN32_IE=0x0400 /D "_WINDLL" /D "_AFXDLL" /D "CXIMAGE_LIB" /Fp"Debug/Image.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Project\DocRec\Source\UI\NKPaint\Image\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE1F.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE20.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/Image.pdb" /debug /machine:I386 /nodefaultlib:"libcmtd.lib" /def:".\Image.def" /out:"../../Bin/Image.dll" /implib:"../../Lib/Imaged.lib" /pdbtype:sept /libpath:"./CxImage" /libpath:"./FreeImage" /libpath:"./IPL/lib/msvc" /libpath:"./Gdiplus" 
+.\Debug\CImage.obj
+.\Debug\CxImagePlus.obj
+.\Debug\FreeImagePlus.obj
+.\Debug\GdiPlus.obj
+.\Debug\Image.obj
+.\Debug\StdAfx.obj
+.\Debug\Image.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE20.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CImage.cpp
+CxImagePlus.cpp
+FreeImagePlus.cpp
+GdiPlus.cpp
+Image.cpp
+Generating Code...
+Linking...
+   Creating library ../../Lib/Imaged.lib and object ../../Lib/Imaged.exp
+
+
+
+<h3>Results</h3>
+Image.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

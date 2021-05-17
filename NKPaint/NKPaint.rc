@@ -1,0 +1,1171 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NKPaint.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ico2.ico"
+IDR_DLG_STRETCH_STRETCH_HORIZONTAL ICON    DISCARDABLE     "res\\ico114.ico"
+IDR_DLG_STRETCH_STRETCH_VERTICAL ICON    DISCARDABLE     "res\\ico115.ico"
+IDR_DLG_STRETCH_CONTORT_HORIZONTAL ICON    DISCARDABLE     "res\\ico116.ico"
+IDR_DLG_STRETCH_CONTORT_VERTICAL ICON    DISCARDABLE     "res\\ico117.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_NP_FONT_EDIT        BITMAP  FIXED IMPURE    "res\\bmp102.bmp"
+IDB_NP_TOOL_BOX         BITMAP  FIXED IMPURE    "res\\bmp859.bmp"
+IDB_NP_ZOOM_RATE        BITMAP  FIXED IMPURE    "res\\bmp862.bmp"
+IDB_NP_TRANSPARENT      BITMAP  FIXED IMPURE    "res\\bmp863.bmp"
+IDB_NP_SPRAY            BITMAP  FIXED IMPURE    "res\\bmp864.bmp"
+IDB_NP_LINE             BITMAP  DISCARDABLE     "res\\865.bmp"
+IDB_NP_ERASER           BITMAP  DISCARDABLE     "res\\866.bmp"
+IDB_NP_RECTANGLE        BITMAP  DISCARDABLE     "res\\867.bmp"
+IDB_NP_BRUSH            BITMAP  DISCARDABLE     "res\\869.bmp"
+IDB_NP_COLOR_BF         BITMAP  DISCARDABLE     "res\\BF.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_FRAME MENU FIXED IMPURE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "From Scanner or &Camera...",  ID_NP_FILE_FROM_CAMERA
+        MENUITEM SEPARATOR
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Page Set&up...",              ID_FILE_PRINT_SETUP
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "S&end...",                    ID_NP_FILE_SEND_TO
+        MENUITEM SEPARATOR
+        MENUITEM "Set As &Background (Tiled)",  ID_NP_FILE_DESK_FILL
+        MENUITEM "Set As Bac&kground (Centered)", ID_NP_FILE_DESK_CENTER
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Repeat\tCtrl+Y",             ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "C&lear Selection\tDel",       ID_NP_EDIT_DEL_SELECTED
+        MENUITEM "Select &All\tCtrl+A",         ID_NP_EDIT_SELECTE_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "C&opy To...",                 ID_NP_EDIT_COPY_TO
+        MENUITEM "Paste &From...",              ID_NP_EDIT_PASTE_FROM
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Tool Box\tCtrl+T",           ID_NP_VIEW_TOOLBAR_TOOL
+        MENUITEM "&Color Box\tCtrl+L",          ID_NP_VIEW_TOOLBAR_COLOR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "T&ext Toolbar",               ID_NP_VIEW_TEXT
+        MENUITEM SEPARATOR
+        POPUP "&Zoom"
+        BEGIN
+            POPUP "User Define(&U)"
+            BEGIN
+                MENUITEM "12.5%",                       ID_NP_VIEW_ZOOM_CUSTOM_EIGHTH
+
+                MENUITEM "25%",                         ID_NP_VIEW_ZOOM_CUSTOM_QUARTER
+
+                MENUITEM "50%",                         ID_NP_VIEW_ZOOM_CUSTOM_HALF
+
+                MENUITEM "100%",                        ID_NP_VIEW_ZOOM_CUSTOM_FIX
+
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Show &Grid\tCtrl+G",          ID_NP_VIEW_SHOW_GRID
+            MENUITEM "Show T&humbnail",             ID_NP_VIEW_SHOW_MAP
+        END
+        MENUITEM "&View Bitmap\tCtrl+F",        ID_NP_VIEW_SHOW_BITMAP
+    END
+    POPUP "&Image"
+    BEGIN
+        MENUITEM "&Flip/Rotate...\tCtrl+R",     ID_NP_IMAGE_FLIP_ROTATE
+        MENUITEM "&Stretch/Skew...\tCtrl+W",    ID_NP_IMAGE_STRETCH
+        MENUITEM "&Invert Colors\tCtrl+I",      ID_NP_IMAGE_INVERT_COLOR
+        MENUITEM "&Attributes...\tCtrl+E",      ID_NP_IMAGE_ATTRIBUTE
+        MENUITEM "&Clear Image\tCtrl+Shft+N",   ID_NP_IMAGE_CLEAR
+        MENUITEM "&Draw Opaque",                ID_NP_IMAGE_NO_TRANSPARENT
+    END
+    POPUP "&Colors"
+    BEGIN
+        MENUITEM "&Edit Colors...",             ID_NP_COLOR_EDIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_NP_HELP_THEME
+        MENUITEM SEPARATOR
+        MENUITEM "&About NKPaint",              ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_FRAME_NO_FILE MENU FIXED IMPURE 
+BEGIN
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Repeat\tCtrl+Y",             ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "C&lear Selection\tDel",       ID_NP_EDIT_DEL_SELECTED
+        MENUITEM "Select &All\tCtrl+A",         ID_NP_EDIT_SELECTE_ALL
+    END
+    MENUITEM SEPARATOR
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Tool Box\tCtrl+T",           ID_VIEW_TOOLBAR
+        MENUITEM "&Color Box\tCtrl+L",          ID_NP_VIEW_TOOLBAR_COLOR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "T&ext Toolbar",               ID_NP_VIEW_TEXT
+        MENUITEM SEPARATOR
+        POPUP "&Zoom"
+        BEGIN
+            MENUITEM "&Normal Size\tCtrl+PgUp",     ID_NP_VIEW_SIZE_NORMAL
+            MENUITEM "&Large Size\tCtrl+PgDn",      ID_NP_VIEW_SIZE_LARGE
+            MENUITEM "C&ustom...",                  ID_NP_VIEW_SIZE_USER
+            MENUITEM SEPARATOR
+            MENUITEM "Show &Grid\tCtrl+G",          ID_NP_VIEW_SHOW_GRID
+            MENUITEM "Show T&humbnail",             ID_NP_VIEW_SHOW_MAP
+        END
+        MENUITEM "&View Bitmap\tCtrl+F",        ID_NP_VIEW_SHOW_BITMAP
+    END
+    POPUP "&Image"
+    BEGIN
+        MENUITEM "&Flip/Rotate...\tCtrl+R",     ID_NP_IMAGE_FLIP_ROTATE
+        MENUITEM "&Stretch/Skew...\tCtrl+W",    ID_NP_IMAGE_STRETCH
+        MENUITEM "&Invert Colors\tCtrl+I",      ID_NP_IMAGE_INVERT_COLOR
+        MENUITEM "&Attributes...\tCtrl+E",      ID_NP_IMAGE_ATTRIBUTE
+        MENUITEM "&Clear Image\tCtrl+Shft+N",   ID_NP_IMAGE_CLEAR
+        MENUITEM "&Draw Opaque",                ID_NP_IMAGE_NO_TRANSPARENT
+    END
+    POPUP "&Colors"
+    BEGIN
+        MENUITEM "&Edit Colors...",             ID_NP_COLOR_EDIT
+    END
+    MENUITEM SEPARATOR
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_NP_HELP_THEME
+        MENUITEM SEPARATOR
+        MENUITEM "&About NKPaint",              ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_FRAME_UPDATE MENU FIXED IMPURE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Save Copy &As...",            ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "From Scanner or &Camera...",  ID_NP_FILE_FROM_CAMERA
+        MENUITEM SEPARATOR
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Page &Setup...",              ID_FILE_PRINT_SETUP
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "S&end...",                    ID_NP_FILE_SEND_TO
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Repeat\tCtrl+Y",             ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Paste &From...",              ID_NP_EDIT_PASTE_FROM
+        MENUITEM "C&lear Selection\tDel",       ID_NP_EDIT_DEL_SELECTED
+        MENUITEM "Select &All\tCtrl+A",         ID_NP_EDIT_SELECTE_ALL
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Tool Box\tCtrl+T",           ID_VIEW_TOOLBAR
+        MENUITEM "&Color Box\tCtrl+L",          ID_NP_VIEW_TOOLBAR_COLOR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "T&ext Toolbar",               ID_NP_VIEW_TEXT
+        MENUITEM SEPARATOR
+        POPUP "&Zoom"
+        BEGIN
+            MENUITEM "&Normal Size\tCtrl+PgUp",     ID_NP_VIEW_SIZE_NORMAL
+            MENUITEM "&Large Size\tCtrl+PgDn",      ID_NP_VIEW_SIZE_LARGE
+            MENUITEM "C&ustom...",                  ID_NP_VIEW_SIZE_USER
+            MENUITEM SEPARATOR
+            MENUITEM "Show &Grid\tCtrl+G",          ID_NP_VIEW_SHOW_GRID
+            MENUITEM "Show T&humbnail",             ID_NP_VIEW_SHOW_MAP
+        END
+        MENUITEM "&View Bitmap\tCtrl+F",        ID_NP_VIEW_SHOW_BITMAP
+    END
+    POPUP "&Image"
+    BEGIN
+        MENUITEM "&Flip/Rotate...\tCtrl+R",     ID_NP_IMAGE_FLIP_ROTATE
+        MENUITEM "&Stretch/Skew...\tCtrl+W",    ID_NP_IMAGE_STRETCH
+        MENUITEM "&Invert Colors\tCtrl+I",      ID_NP_IMAGE_INVERT_COLOR
+        MENUITEM "&Attributes...\tCtrl+E",      ID_NP_IMAGE_ATTRIBUTE
+        MENUITEM "&Clear Image\tCtrl+Shft+N",   ID_NP_IMAGE_CLEAR
+        MENUITEM "&Draw Opaque",                ID_NP_IMAGE_NO_TRANSPARENT
+    END
+    POPUP "&Colors"
+    BEGIN
+        MENUITEM "&Edit Colors...",             ID_NP_COLOR_EDIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_NP_HELP_THEME
+        MENUITEM SEPARATOR
+        MENUITEM "&About NKPaint",              ID_APP_ABOUT
+    END
+END
+
+IDR_POP_MUNE_SELECT_CONTENT MENU FIXED IMPURE 
+BEGIN
+    POPUP "Text"
+    BEGIN
+        MENUITEM "Cut",                         ID_EDIT_CUT
+        MENUITEM "Copy",                        ID_EDIT_COPY
+        MENUITEM "Paste",                       ID_EDIT_PASTE
+        MENUITEM "Clear Selection",             ID_NP_EDIT_DEL_SELECTED
+        MENUITEM "Select All",                  ID_NP_EDIT_SELECTE_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "C&opy To...",                 ID_NP_EDIT_COPY_TO
+        MENUITEM "Paste &From...",              ID_NP_EDIT_PASTE_FROM
+        MENUITEM SEPARATOR
+        MENUITEM "&Flip/Rotate...",             ID_NP_IMAGE_FLIP_ROTATE
+        MENUITEM "&Stretch/Skew...",            ID_NP_IMAGE_STRETCH
+        MENUITEM "&Invert Colors",              ID_NP_IMAGE_INVERT_COLOR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAIN_FRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_NP_IMAGE_ATTRIBUTE,  VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_NP_VIEW_SHOW_MAP,    VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_NP_IMAGE_INVERT_COLOR, VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_NP_VIEW_TOOLBAR_COLOR, VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_NP_IMAGE_FLIP_ROTATE, VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_NP_VIEW_TOOLBAR_TOOL, VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "W",            ID_NP_IMAGE_STRETCH,    VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About NKPaint"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "NKPaint v1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009-2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+37 DIALOGEX 0, 0, 235, 13
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        104,0,0,110,57,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | 
+                    CBS_SORT | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        103,115,0,35,58,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        140,155,0,80,130,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_ATTRIBUTE DIALOG DISCARDABLE  0, 0, 234, 122
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Attributes"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "",IDC_DLG_ATTRIBUTE_STATIC_LAST_SAVED,13,7,144,8
+    LTEXT           "",IDC_DLG_ATTRIBUTE_STATIC_DISK_SPACE,13,17,144,8
+    LTEXT           "",IDC_DLG_ATTRIBUTE_STATIC_DPI,13,27,144,8
+    LTEXT           "&Width:",1050,13,44,33,10
+    EDITTEXT        IDC_DLG_ATTRIBUTE_WEITH,48,42,32,12,ES_AUTOHSCROLL
+    LTEXT           "&Height:",1051,92,44,33,10
+    EDITTEXT        IDC_DLG_ATTRIBUTE_HEIGHT,123,42,32,12,ES_AUTOHSCROLL
+    GROUPBOX        "Units",-1,7,58,154,28,WS_GROUP
+    CONTROL         "&Inches",IDC_DLG_ATTRIBUTE_RADIO_INCH,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,70,43,10
+    CONTROL         "C&m",IDC_DLG_ATTRIBUTE_RADIO_CM,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,63,70,42,10
+    CONTROL         "&Pixels",IDC_DLG_ATTRIBUTE_RADIO_PIXEL,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,110,70,43,10
+    GROUPBOX        "Colors",-1,7,90,154,28,WS_GROUP
+    CONTROL         "&Black and white",IDC_DLG_ATTRIBUTE_RADIO_GRAY,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,102,84,10
+    CONTROL         "Co&lors",IDC_DLG_ATTRIBUTE_RADIO_COLOR,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,105,102,47,10
+    GROUPBOX        "Transparency",-1,7,122,154,48,WS_GROUP
+    CONTROL         "Use &Transparent background color",
+                    IDC_DLG_ATTRIBUTE_CHECK_TRANSPARENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,134,126,10
+    PUSHBUTTON      "Select &Color...",IDC_DLG_ATTRIBUTE_BUTTON_SELECT_COLOR,
+                    33,147,73,14
+    CONTROL         "",1070,"Static",SS_SIMPLE | SS_SUNKEN,119,148,16,14
+    DEFPUSHBUTTON   "OK",IDOK,176,7,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,176,24,50,14
+    PUSHBUTTON      "&Default",IDC_DLG_ATTRIBUTE_BUTTON_DEFAULT,176,41,50,14
+END
+
+108 DIALOGEX 16, 16, 212, 85
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Custom Zoom"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Current zoom:",1065,8,6,56,9
+    RTEXT           "",1081,70,6,63,9
+    GROUPBOX        "Zoom to",-1,7,20,145,57,WS_GROUP
+    CONTROL         "100%(&1)",1082,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    13,38,44,10
+    CONTROL         "200%(&2)",1083,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    13,57,44,10
+    CONTROL         "400%(&4)",1084,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    61,38,44,10
+    CONTROL         "600%(&6)",1085,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    61,57,44,10
+    CONTROL         "800%(&8)",1086,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    107,38,44,10
+    DEFPUSHBUTTON   "OK",IDOK,159,7,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,159,24,50,14
+END
+
+IDD_DLG_FLIP_ROTATE DIALOG DISCARDABLE  32, 16, 199, 143
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Flip and Rotate"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "Flip or rotate",IDC_STATIC,7,7,127,94,WS_GROUP
+    CONTROL         "&Flip horizontal",IDC_DLG_FLIP_ROTATE_RADIO_HORIZONTAL,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,13,20,80,10
+    CONTROL         "Flip &vertical",IDC_DLG_FLIP_ROTATE_RADIO_VERTICAL,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,13,33,80,10
+    CONTROL         "&Rotate by angle",IDC_DLG_FLIP_ROTATE_RADIO_ANGLE,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,13,47,84,10
+    CONTROL         "&Rotate by &any angle",
+                    IDC_DLG_FLIP_ROTATE_RADIO_ANGLE_ANY,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,112,114,10
+    CONTROL         "&90бу",IDC_DLG_FLIP_ROTATE_RADIO_ANGLE_90,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,49,61,48,10
+    CONTROL         "&180бу",IDC_DLG_FLIP_ROTATE_RADIO_ANGLE_180,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,49,74,52,10
+    CONTROL         "&270бу",IDC_DLG_FLIP_ROTATE_RADIO_ANGLE_270,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,49,87,52,10
+    DEFPUSHBUTTON   "OK",IDOK,142,10,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,142,27,50,14
+    EDITTEXT        IDC_DLG_FLIP_ROTATE_EDIT_ANGLE,49,125,42,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "Degrees",IDC_STATIC,94,128,9,8
+END
+
+IDD_DLG_STRETCH DIALOG DISCARDABLE  18, 48, 251, 153
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Stretch and Skew"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "Stretch",IDC_STATIC,7,7,160,67,WS_GROUP
+    ICON            IDR_DLG_STRETCH_STRETCH_HORIZONTAL,1055,15,20,20,20
+    LTEXT           "&Horizontal:",IDC_STATIC,53,27,40,8
+    EDITTEXT        ID_DLG_STRETCH_STRETCH_HORIZONTAL,95,26,32,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,130,27,8,8
+    ICON            IDR_DLG_STRETCH_STRETCH_VERTICAL,1056,15,45,20,20
+    LTEXT           "&Vertical:",IDC_STATIC,53,51,40,8
+    EDITTEXT        ID_DLG_STRETCH_STRETCH_VERTICAL,95,50,32,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,130,51,8,8
+    GROUPBOX        "Skew",IDC_STATIC,7,77,160,67,WS_GROUP
+    ICON            IDR_DLG_STRETCH_CONTORT_HORIZONTAL,1057,15,90,20,20
+    LTEXT           "H&orizontal:",IDC_STATIC,53,97,40,8
+    EDITTEXT        ID_DLG_STRETCH_CONTORT_HORIZONTAL,95,96,32,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "Degrees",IDC_STATIC,133,97,28,8
+    ICON            IDR_DLG_STRETCH_CONTORT_VERTICAL,1058,15,115,20,20
+    LTEXT           "V&ertical:",IDC_STATIC,53,121,40,8
+    EDITTEXT        ID_DLG_STRETCH_CONTORT_VERTICAL,95,120,32,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "Degrees",IDC_STATIC,133,121,28,8
+    DEFPUSHBUTTON   "OK",IDOK,194,8,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,194,25,50,14
+END
+
+132 DIALOGEX 0, 0, 131, 95
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Color Table"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,73,23,50,14
+    LISTBOX         1099,3,2,63,90,LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+133 DIALOGEX 32, 32, 350, 215
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Page Setup"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Preview",-1,8,8,102,176
+    CONTROL         "",1080,"Static",SS_WHITERECT | WS_GROUP,16,54,80,80
+    CONTROL         "",1081,"Static",SS_GRAYRECT | WS_GROUP,96,58,4,80
+    CONTROL         "",1082,"Static",SS_GRAYRECT | WS_GROUP,30,138,80,4
+    GROUPBOX        "Paper",1073,118,8,224,56,WS_GROUP
+    LTEXT           "Si&ze:",1089,126,24,36,8
+    COMBOBOX        1137,174,22,160,160,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "&Source:",1090,126,44,36,8
+    COMBOBOX        1138,174,42,160,160,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Orientation",1072,118,68,64,56,WS_GROUP
+    RADIOBUTTON     "P&ortrait",1056,126,82,52,12,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "L&andscape",1057,126,102,52,12
+    GROUPBOX        "Margins",1075,190,68,152,56,WS_GROUP
+    LTEXT           "&Left:",1102,198,84,32,8
+    EDITTEXT        1155,230,82,32,12,WS_GROUP
+    LTEXT           "&Right:",1103,272,84,32,8
+    EDITTEXT        1157,304,82,32,12,WS_GROUP
+    LTEXT           "&Top:",1104,198,104,32,8
+    EDITTEXT        1156,230,102,32,12,WS_GROUP
+    LTEXT           "&Bottom:",1105,272,104,32,8
+    EDITTEXT        1158,304,102,32,12,WS_GROUP
+    GROUPBOX        "Centering",1210,118,128,64,56,WS_GROUP
+    CHECKBOX        "&Horizontal",1211,126,142,52,12
+    CHECKBOX        "&Vertical",1212,126,162,52,12
+    GROUPBOX        "Scaling",1213,190,128,152,56,WS_GROUP
+    RADIOBUTTON     "A&djust to:",1214,198,142,54,12,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "&Fit to:",1215,198,162,54,12
+    EDITTEXT        1216,255,142,20,12,ES_NUMBER | WS_GROUP
+    LTEXT           "% normal size",1217,277,144,48,8
+    EDITTEXT        1218,255,162,20,12,ES_NUMBER | WS_GROUP
+    LTEXT           "by",1219,277,164,8,8
+    EDITTEXT        1220,287,162,20,12,ES_NUMBER
+    LTEXT           "page(s)",1221,309,164,28,8
+    DEFPUSHBUTTON   "OK",IDOK,178,192,48,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,230,192,48,14
+    PUSHBUTTON      "&Printer...",1026,288,192,53,14
+    PUSHBUTTON      "&Help",1038,118,192,48,14
+END
+
+IDD_DLG_GRID DIALOGEX 50, 40, 200, 85
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Grid Settings"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "               ",-1,7,20,127,58
+    CHECKBOX        "&Pixel Grid",728,13,7,62,10
+    CHECKBOX        "&Tile Grid",727,13,20,57,10
+    LTEXT           "&Width:",-1,15,35,33,9
+    EDITTEXT        264,53,33,32,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "pixels",-1,91,35,24,9
+    LTEXT           "H&eight:",-1,14,57,33,9
+    EDITTEXT        266,53,55,32,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "pixels",-1,91,57,20,9
+    DEFPUSHBUTTON   "OK",IDOK,142,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,142,24,50,14
+END
+
+IDD_DLG_COLOR DIALOG DISCARDABLE  0, 0, 178, 31
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+END
+
+IDD_DLG_MAP DIALOGEX 0, 0, 171, 233
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Thumbnail"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "NKPaint\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "NKPAINT\0"
+            VALUE "LegalCopyright", "Copyright (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "NKPaint.EXE\0"
+            VALUE "ProductName", "NKPaint\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "res\\manifest.xml"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_NP_CURSOR_SPLIT     CURSOR  DISCARDABLE     "res\\cur135.cur"
+IDC_NP_CURSOR_CROSS_NORMAL CURSOR  DISCARDABLE     "res\\cur1100.cur"
+IDC_NP_CURSOR_CROSS_BRUSH CURSOR  DISCARDABLE     "res\\cur1201.cur"
+IDC_NP_CURSOR_CROSS_SMALL CURSOR  DISCARDABLE     "res\\cur1202.cur"
+IDC_NP_CURSOR_CROSS_PEN CURSOR  DISCARDABLE     "res\\cur1203.cur"
+IDC_NP_CURSOR_SUCKER    CURSOR  DISCARDABLE     "res\\cur1204.cur"
+IDC_NP_CURSOR_FILL      CURSOR  DISCARDABLE     "res\\cur1205.cur"
+IDC_NP_CURSOR_PEN       CURSOR  DISCARDABLE     "res\\cur1206.cur"
+IDC_NP_CURSOR_ZOOM      CURSOR  DISCARDABLE     "res\\cur1207.cur"
+IDC_NP_CURSOR_MOVE      CURSOR  DISCARDABLE     "res\\cur8012.cur"
+IDC_NP_CURSOR_DRAG_LT   CURSOR  DISCARDABLE     "res\\cur8025.cur"
+IDC_NP_CURSOR_DRAG_RB   CURSOR  DISCARDABLE     "res\\cur8026.cur"
+IDC_NP_CURSOR_DRAG_HORIZONTAL CURSOR  DISCARDABLE     "res\\cur8027.cur"
+IDC_NP_CURSOR_DRAG_VERTICAL CURSOR  DISCARDABLE     "res\\cur8028.cur"
+IDC_NP_CURSOR_SPRAY     CURSOR  DISCARDABLE     "res\\cur8029.cur"
+IDC_NP_CURSOR_VERTICAL_FONT CURSOR  DISCARDABLE     "res\\cur8030.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    100                     "OLE 2.0 was unable to start.\nMake sure that you are using the correct version of the OLE libraries."
+    104                     "Windows socket was unable to start"
+    110                     "Places the text."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Paint\nuntitled\nBitmap Image\nBitmap Files (*.bmp)\n.bmp\nPaint.Picture\nBitmap Image"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "Extension"
+    ID_INDICATOR_CAPS       "Capital"
+    ID_INDICATOR_NUM        "Number"
+    ID_INDICATOR_SCRL       "Scroll"
+    ID_INDICATOR_OVR        "Overlay"
+    ID_INDICATOR_REC        "Record"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    57683                   "Sends the selection using mail or fax."
+    57684                   "Prints the selection."
+    57689                   "Shows or hides the thumbnail."
+    57690                   "Shows Paint Help."
+    57691                   "Microsoft\\Windows\\CurrentVersion\\Applets"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Shows or hides the toolbar."
+    ID_VIEW_STATUS_BAR      "Shows or hides the statusbar."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCTASKLIST      "Active task table"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    2                       "Paint\nuntitled\nBitmap Image\nBitmap Files (*.bmp)\n.bmp\nPaint.Picture\nBitmap Image"
+    6                       ".bmp"
+    7                       ".gif"
+    8                       ".jpg"
+    9                       ".ico"
+    10                      ".pcx"
+    11                      "PCX Files"
+    12                      "Icon Files"
+    13                      "Monochrome Bitmap (*.bmp;*.dib)"
+    14                      "16 Color Bitmap (*.bmp;*.dib)"
+    15                      "256 Color Bitmap (*.bmp;*.dib)"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    16                      "24-bit Bitmap (*.bmp;*.dib)"
+    17                      ".pcd"
+    18                      ".pic"
+    19                      "All Files"
+    20                      "Palette|*.pal|"
+    21                      ".png"
+    22                      ".tga"
+    23                      ".tif"
+    24                      ".pal"
+    25                      "untitled.pal"
+    28                      ".dib"
+    29                      ".rle"
+    30                      "OLE 2.0 was unable to start.\nMake sure that you are using the correct version of the OLE libraries."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    33                      "All Picture Files"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    620                     "Selects a rectangular part of the picture to move, copy, or edit.\nSelect"
+    621                     "Selects a free-form part of the picture to move, copy, or edit.\nFree-Form Select"
+    622                     "Inserts text into the picture.\nText"
+    623                     "Fills an area with the current drawing color.\nFill With Color"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    624                     "Draws a straight line with the selected line width.\nLine"
+    627                     "Draws using an airbrush of the selected size.\nAirbrush"
+    628                     "Draws a curved line with the selected line width.\nCurve"
+    632                     "Draws a polygon with the selected fill style.\nPolygon"
+    634                     "Draws a rounded rectangle with the selected fill style.\nRounded Rectangle"
+    636                     "Draws a free-form line one pixel wide.\nPencil"
+    637                     "Erases a portion of the picture, using the selected eraser shape.\nEraser/Color Eraser"
+    638                     "Changes the magnification.\nMagnifier"
+    639                     "Picks up a color from the picture for drawing.\nPick Color"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    640                     "Draws using a brush with the selected shape and size.\nBrush"
+    641                     "Draws a rectangle with the selected fill style.\nRectangle"
+    642                     "Draws a filled rectangle."
+    643                     "Draws an ellipse with the selected fill style.\nEllipse"
+    644                     "Draws a filled ellipse."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    1000                    "Not enough room to paste text.\nEnlarge the text area and try again."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    2051                    "Paint cannot open this file."
+    2052                    "Paint cannot read this file."
+    2054                    "This file is read-only.\nTo save your changes, use a different filename."
+    2056                    "This file is already open."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    2064                    "This is not a valid .PCS file."
+    2067                    "This file is open for editing and cannot be overwritten.\nUse a different filename to save your changes."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    IDS_NP_INVALID_FILE     "This is not a valid bitmap file, or its format is not currently supported."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    2083                    "This is not a valid bitmap file, or its format is not currently supported."
+    2084                    "This is not a valid icon."
+    2085                    "This is not a valid cursor."
+    2090                    "Save was interrupted, so your file has not been saved."
+    2092                    "You cannot save to a read-only file.\nUse a different file name."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    2096                    "This file is already in use.\nClose the program, and then try again."
+    2110                    "Paint cannot save this file."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    2152                    "Paint cannot save to the same filename with a different file type.\nUse a different filename to save your changes."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    2210                    "The grid spacing must be an integer between %d and %d."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    2240                    "There is not enough memory or resources to complete operation.\nClose some programs, and then try again."
+    2241                    "Low on memory or resources.\nClose some programs, and then try again."
+    2247                    "Group error."
+    2248                    "Paint was unable to print your document. Please make sure you have sufficient disk space and that your printer is working correctly."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    2297                    "Saving into this format may cause some loss of color information.\nDo you want to continue?"
+    2298                    "Converting to black and white cannot be undone.  This action affects the current file and may cause some loss of color information.\nDo you want to continue?"
+    2299                    "Bitmaps must be greater than one pixel on a side."
+    2300                    "CFileException"
+    2301                    "Generic error."
+    2302                    "File not found."
+    2303                    "Bad path."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    2304                    "Too many open files."
+    2305                    "Access denied."
+    2306                    "Invalid file."
+    2307                    "Remove current folder."
+    2308                    "Folder full."
+    2309                    "Bad seek."
+    2310                    "Hard IO error."
+    2311                    "Sharing violation."
+    2312                    "Lock violation."
+    2313                    "Disk full."
+    2314                    "End of file."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    2445                    "Error getting the Clipboard Data!"
+    2446                    "No Printer Found @ page setup"
+    2447                    "Unable to communicate with the device. Verify the device is properly connected and try again."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    2448                    "Unable to retrieve image from device. Verify the device is properly connected and try again."
+    2449                    "Downloading picture"
+    2450                    "Reading data from the device (%d%% complete)"
+    2451                    "Processing data (%d%% complete)"
+    2452                    "Transferring data (%d%% complete)"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    3550                    "            "
+    3551                    "            "
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    6868                    "Makes the current selection either opaque or transparent."
+    6869                    "Creates a new color."
+    6870                    "Uses a previously saved palette of colors."
+    6871                    "Saves the current palette of colors to a file."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    7057                    "You must save the file before choosing it as background."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    9233                    "The selection is now larger than the bitmap.\nWould you like the bitmap enlarged?"
+    9234                    "The image in the clipboard is larger than the bitmap.\nWould you like the bitmap enlarged?"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    10015                   "The file is not in the correct format."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_NP_VIEW_ZOOM_CUSTOM_HALF "1/2"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_NP_VIEW_ZOOM_CUSTOM_QUARTER "1/4"
+    ID_NP_VIEW_ZOOM_CUSTOM_EIGHTH "1/8"
+    ID_NP_VIEW_SIZE_NORMAL  "Zooms the picture to 100%."
+    ID_NP_VIEW_SIZE_LARGE   "Zooms the picture to 400%."
+    ID_NP_VIEW_SIZE_USER    "Zooms the picture."
+    ID_NP_VIEW_SHOW_BITMAP  "Displays the entire picture."
+    ID_NP_VIEW_SHOW_MAP     "Shows or hides the thumbnail view of the picture."
+    ID_NP_VIEW_SHOW_GRID    "Shows or hides the grid."
+    ID_NP_VIEW_TEXT         "Shows or hides the text toolbar."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    32776                   "Resets the text to be without any attributes."
+    32777                   "Sets or clears the text bold attribute."
+    32778                   "Sets or clears the text italic attribute."
+    32780                   "Selects the font used by the text."
+    32781                   "Selects the point size of the text."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    32789                   "Sets or clears the text underline attribute."
+    32791                   "Shows or hides the tooltips."
+    32792                   "Show Paint Help."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_NP_FILE_SEND_TO      "Sends a picture by using mail or fax."
+    ID_NP_FILE_FROM_CAMERA  "Downloads a new document from a scanner or camera."
+    ID_NP_FILE_DESK_CENTER  "Centers this bitmap as the desktop background."
+    ID_NP_FILE_DESK_FILL    "Tiles this bitmap as the desktop background."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_NP_EDIT_COPY_TO      "Copies the selection to a file."
+    ID_NP_EDIT_PASTE_FROM   "Pastes a file into the selection."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    37665                   "Selects the scanner or camera device."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_NP_IMAGE_FLIP_ROTATE "Flips or rotates the picture or a selection."
+    ID_NP_IMAGE_STRETCH     "Stretches or skews the picture or a selection."
+    ID_NP_IMAGE_INVERT_COLOR 
+                            "Inverts the colors of the picture or a selection."
+    ID_NP_IMAGE_ATTRIBUTE   "Changes the attributes of the picture."
+    ID_NP_IMAGE_CLEAR       "Clears the picture or selection."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    37685                   "The font size must be a numeric value."
+    37686                   "Contains commands for working with the selected item(s)."
+    37687                   "Contains commands for selecting and transferring items."
+    37688                   "Contains commands for customizing this window."
+    37689                   "Contains commands for manipulating pictures and setting attributes."
+    37690                   "Contains commands for using custom colors and drawing options."
+    37691                   "Contains commands for displaying Help for and information about Paint."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    41747                   "Cannot save file."
+    41748                   "Error removing temporary file."
+    41749                   "Get Colors"
+    41750                   "Save Colors"
+    41751                   "Edit Colors"
+    41752                   "Copy To"
+    41753                   "Paste From"
+    41754                   "Select Color"
+    41755                   "File last saved:\tNot Available"
+    41756                   "Size on disk:\tNot Available"
+    41757                   "File last saved:\t%s"
+    41758                   "Size on disk:\t%s bytes"
+    41759                   "Resolution:\tNot Available"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    41760                   "Resolution:\t%d x %d dots per inch"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    42047                   "Painting"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    44036                   "Bitmap"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    44108                   "Colors"
+    44109                   "Fonts"
+    44111                   "Thumbnail"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    44112                   "Tools"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    44227                   " "
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    44700                   "x"
+    44701                   ","
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Paint"
+    AFX_IDS_IDLEMESSAGE     "For Help, click Help Topics on the Help Menu."
+    AFX_IDS_HELPMODEMESSAGE "Select an area on which to get Help."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_FILE_NEW             "Creates a new document."
+    ID_FILE_OPEN            "Opens an existing document."
+    ID_FILE_CLOSE           "Closes the active document."
+    ID_FILE_SAVE            "Saves the active document."
+    ID_FILE_SAVE_AS         "Saves the active document with a new name."
+    ID_FILE_PAGE_SETUP      "Changes the page layout."
+    ID_FILE_PRINT_SETUP     "Specifies the default printer setup."
+    ID_FILE_PRINT           "Prints the active document and sets printing options."
+    ID_FILE_PRINT_PREVIEW   "Displays full pages."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Opens this document."
+    ID_FILE_MRU_FILE2       "Opens this document."
+    ID_FILE_MRU_FILE3       "Opens this document."
+    ID_FILE_MRU_FILE4       "Opens this document."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_EDIT_CLEAR           "Deletes the selection."
+    ID_EDIT_CLEAR_ALL       "Erases everything."
+    ID_EDIT_COPY            "Copies the selection and puts it on the Clipboard."
+    ID_EDIT_CUT             "Cuts the selection and puts it on the Clipboard."
+    ID_EDIT_FIND            "Finds the specified text."
+    ID_EDIT_PASTE           "Inserts the contents of the Clipboard."
+    ID_EDIT_REPEAT          "Repeats the last action."
+    ID_EDIT_REPLACE         "Replaces specific text with different text."
+    ID_EDIT_SELECT_ALL      "Selects everything."
+    ID_EDIT_UNDO            "Undoes the last action."
+    ID_EDIT_REDO            "Redoes the previously undone action."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_APP_ABOUT            "Displays program information, version number, and copyright."
+    ID_APP_EXIT             "Quits NKPaint."
+    ID_HELP_INDEX           "Opens Paint Help."
+    ID_HELP_USING           "Displays instructions about how to use Help."
+    ID_CONTEXT_HELP         "Displays Help for areas you click on."
+    ID_HELP                 "Displays Help for the current task or command."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    59415                   "Shows or hides the tool box."
+    59416                   "Shows or hides the color box."
+    59417                   "To vertically edit text, you must use an East Asian font."
+    59418                   "Paintbrush Picture"
+    59419                   "Bitmap Image"
+    59420                   "&Edit"
+    59421                   "&Open"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    59500                   "%s\n%s\n%s"
+    59501                   "%s\n%s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COMMON_MODIFIED     "Save modified file?"
+    IDS_ATTRIBUTE_DLG_FILE_LAST_SAVED "File last saved:\t%s"
+    IDS_ATTRIBUTE_DLG_FILE_SIZE "Size on disk:\t%s"
+    IDS_ATTRIBUTE_DLG_RESOLUTION "Resolution:\t%s"
+    IDS_ATTRIBUTE_DLG_RESOLUTION_FORMAT "%d x %d per dots"
+    IDS_ATTRIBUTE_DLG_FILE_LAST_NOT_SAVE "Not"
+    IDS_ATTRIBUTE_DLG_FILE_SIZE_INVALID "Not Available"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\NKPaint.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
